@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&amp;display=swap');
+
+body {
+    background-color: #111;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    padding-bottom: 9vh;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 44rem; */
+    padding-top: 4rem;
+    /* outline: auto; */
+
+}
+
+.nav a {
+    color: #0acc74;
+    font-family: 'PT Mono', monospace;
+    text-decoration: none;
+}
+
+
+.nav p {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+.links {
+    display: flex;
+
+    justify-content: space-evenly;
+    flex: 0.5;
+}
+
+.name {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 700;
+    background-color: #0acc74;
+    color: black;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.hero {
+    margin-inline: auto;
+    margin-top: 10vh;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.hero img {
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.text {
+    text-align: left;
+    font-size: 1.2rem;
+
+}
+
+.about {
+    width: 90%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+}
+
+.name {
+    user-select: none;
+
+}
+
+.content {
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+
+}
+
+.text-wrapper {
+    font-size: 0.9rem;
+}
+
+span a {
+    color: unset;
+    text-decoration: none;
+}
+
+.intro {
+    font-size: 1.8rem;
+    /* line-height: 1rem; */
+}
+
+
+
+.ml10 {
+    position: relative;
+    /* font-size: 1em; */
+}
+
+.ml10 .text-wrapper {
+    position: relative;
+    display: inline;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+}
+
+
+
+.ml14 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #0acc74;
+    transform-origin: 100% 100%;
+    bottom: 0;
+}
+
+.ml14 .letter {
+    display: inline;
+    line-height: 1em;
+}
+
+.ml7 {
+    position: relative;
+
+}
+
+.ml7 .text-wrapper {
+    position: relative;
+    display: inline;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    /* overflow: hidden; */
+}
+
+.ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.footer {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer svg {
+    color: #0acc74;
+}
+
+.footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1rem;
+}
+
+.copyright {
+    font-family: 'PT Mono', monospace;
+}
+
+
+
+#circle {
+    background-color: white;
+    height: 32vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background-image: linear-gradient(to right top, #333829, #494f3b, #60684f, #788163, #919c78);
+    animation: rotate 70s infinite;
+    opacity: 0.4;
+    filter: blur(1rem);
+    z-index: -5;
+}
+
+
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        /* scale: 1 1.5; */
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        /* outline: auto; */
+        width: 80%;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        /* margin-inline: auto; */
+        /* justify-self: center; */
+    }
+
+    .nav p {
+        margin-right: 1rem;
+    }
+
+    .links {
+        gap: 2rem;
+        margin-right: 1rem;
+
+    }
+
+    .footer {
+        position: absolute;
+        bottom: -45vh;
+        left: 0;
+    }
+
+    #circle {
+        visibility: hidden;
+    }
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Add this to styles/style.css */
+
+/* Ensure minimal changes to existing styles */
+.typing-effect {
+    border-right: 2px solid #00FF88; /* Matches your theme color */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom; /* Aligns text properly */
+    min-width: 300px; /* Adjust based on the length of your longest text */
+}
+
+/* Optional: Adjust alignment of the container */
+.hero .text {
+    /* Add any additional alignment or padding adjustments here */
+    text-align: left; /* Example: Ensures text aligns properly in its container */
+}
+
