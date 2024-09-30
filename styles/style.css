@@ -23,12 +23,11 @@ body {
     color: #0acc74;
     font-family: 'PT Mono', monospace;
     text-decoration: none;
-    font-size: 1rem; /* Reduce font size */
 }
 
 .nav p {
     font-family: 'Major Mono Display', monospace;
-    font-size: 1.1rem; /* Slightly reduced font size */
+    font-size: 1.2rem;
     font-weight: 800;
 }
 
@@ -51,38 +50,36 @@ body {
 
 .hero {
     margin-inline: auto;
-    margin-top: 8vh;
+    margin-top: 10vh;
+    justify-self: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-    max-width: 100vw; /* Ensures hero doesn't exceed viewport width */
 }
 
 .hero img {
-    width: 12rem; /* Reduced image size for better scaling */
+    width: 15rem;
     border-radius: 50%;
 }
 
 .text {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .about {
     width: 90%;
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
-    margin-inline: auto;
 }
 
 .content {
-    width: 90%;
+    width: 80%;
     margin-inline: auto;
-    margin-top: 4rem;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    padding: 0 1rem; /* Add padding for mobile readability */
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
 }
 
 .text-wrapper {
@@ -95,7 +92,7 @@ span a {
 }
 
 .intro {
-    font-size: 1.6rem; /* Adjusted for better readability on smaller screens */
+    font-size: 1.8rem;
 }
 
 .ml10 {
@@ -188,7 +185,7 @@ span a {
 /* Circle Animation */
 #circle {
     background-color: white;
-    height: 28vmax; /* Reduced size for smaller screens */
+    height: 32vmax;
     aspect-ratio: 1;
     position: absolute;
     left: 50%;
@@ -215,8 +212,8 @@ span a {
 @media only screen and (max-width: 768px) {
     .hero {
         flex-direction: column-reverse;
-        width: 90%; /* Adjusted to fit mobile view */
-        gap: 1.5rem;
+        width: 80%;
+        gap: 2rem;
         margin-bottom: 3rem;
     }
 
@@ -224,12 +221,10 @@ span a {
         flex-direction: column;
         margin-top: 1rem;
         margin-left: 0;
-        padding-bottom: 1rem;
     }
 
     .nav p {
         margin-right: 1rem;
-        font-size: 1rem; /* Adjusted font size */
     }
 
     .links {
@@ -239,21 +234,15 @@ span a {
 
     .text {
         text-align: center;
-        font-size: 1rem; /* Slightly smaller for mobile */
+        font-size: 1.1rem;
     }
 
     .intro {
-        font-size: 1.3rem; /* Optimized for smaller screens */
+        font-size: 1.5rem;
     }
 
     .about {
         font-size: 0.85rem;
-        text-align: justify; /* Better formatting for paragraphs on mobile */
-    }
-
-    .content {
-        font-size: 1rem;
-        padding: 0 1rem; /* Add more padding for better readability */
     }
 
     .footer {
@@ -264,7 +253,7 @@ span a {
     }
 
     #circle {
-        visibility: hidden; /* Hide animated circle on mobile for performance */
+        visibility: hidden;
     }
 }
 
